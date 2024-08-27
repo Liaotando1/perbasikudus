@@ -1,0 +1,170 @@
+.backgroundAll{
+    position : fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background:whitesmoke;
+    z-index:-1;
+}
+#sidebar{
+    transition: all 1s; /*untuk memberikan animasi kepada perubahan css*/
+    position: fixed;/*membuat slidebar menjadi fixed*/
+    background: #293a42;/*warna bg*/
+    color: white;/*warna tulisan*/
+    left:0;/*posisi left berada pada  koordinat 0 di layar*/
+    top:0;/*posisi top berada pada  koordinat 0 di layar*/
+    bottom:0;/*posisi bottom berada pada  koordinat 0 di layar*/
+    width: 260px;/*mengatur lebardari div*/
+    /*position fixed artinya tag html tersebut akan tetap berada
+    di layar, walaupun di scroll kebawah. css top,left,bottom,
+    dan top hanya bisa berpengaruh apabila positionnya fixed,
+    absolute, dan relative*/
+
+}
+#sidebar .sideheader{
+    padding:15px 5px;/*jarak antara border dengan conten di dalamnya*/
+    display:flex;/*mengatur agar tampilan sejajar*/
+    background:#202930;
+    height: 30px;/*mengatur tinggi dari tag yg bersangkutan*/
+    overflow:hidden;/*menyembunyikan content apabila lebih dari batas
+    yang ditentukan*/
+}
+#sidebar .sideheader .name h1{
+    transition: all 1s;
+    font-size: 16px;/*ukuran font*/
+    margin: 0px;
+}
+#sidebar .sideheader .name p{
+    transition: all 1s;
+    font-size: 14px;
+    margin : 0px;
+    opacity : 0.8;/*mengatur tingkat transparant pada tag yg 
+    bersangkutan nilainya, nilai berada pada range 0 - 1*/
+}
+#sidebar .sideheader .hamburgerbar{
+    transition: all 1s;
+    margin-left: auto;/*mengatur jarak batas luar border dgn tag
+    lainnya*/
+    width: 21px;
+    display:block;
+    align-self: center;/*mengatur vertikal align pada konten,
+    ada juga align-contetn dan align-item*/
+    margin-right: 10px;
+}
+#sidebar .sideheader .hamburgerbar a .bar{
+    transition: all 1s;
+    background: white;
+    height: 3px;
+    margin-bottom: 3px;
+}
+#sidebar .sidebody .sidebodypart{
+    border-top: solid 3px #2f3a43;
+    /*mengatur border pada tag yang bersangkutan, solid merupakan
+    jenis garis, 3px tebal garis, dan #2f3a43 warna garis*/
+}
+#sidebar .sidebody .sidebodypart ul{
+    margin:0px;
+    padding:0px;
+    list-style: none; /*menghilangkan list default dari ul*/
+}
+#sidebar .sidebody .sidebodypart ul li{
+    height: 37px;
+    padding-left: 10px;
+    border-left: solid 3px #293a42;
+    display: flex;
+    margin-bottom: 2px;
+}
+#sidebar .sidebody .sidebodypart ul li:hover{
+    background: #212f32;
+    border-left: solid 3px #17b1b8;
+}
+#sidebar .sidebody .sidebodypart .isActive{
+    background:#212f32;
+    border-left: solid 3px #17b1b8;
+}
+#sidebar .sidebody .sidebodypart ul li a{
+    text-decoration: none;/*menghilangkan style bawaan dari tag a*/
+    color :white;
+    width:100%;
+    height:100%;
+    display:flex;
+}
+#sidebar .sidebody .sidebodypart ul li a p{
+    transition: all 1s;
+    align-self:center;
+    margin:0px;
+}
+
+#navbar{
+    transition: all 1s;
+    position: fixed;
+    margin-left: 260px;
+    display: flex;
+    background: #f8f9fe;
+    height: 65px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 0px 30px;
+}
+#navbar .searchbar{
+  align-self: center;
+}
+#navbar .searchbar input{
+    border: none;
+    background: transparent;
+    border-bottom: solid 1px #00000078;
+}
+#navbar .barinfo{
+    align-self:center;
+    margin-left:auto;
+}
+
+#dashboardData{
+    transition: all 1s;
+    margin-left: 252px;
+    margin-top: 65px;
+    padding: 20px;
+} 
+/*bawah ini untuk memberikan animasi dalam bentuk css*/
+.animationNavbar{
+    margin-left:100px !important;
+    transition: all 1s;
+}
+.animationDashboardData{
+    margin-left: 100px !important;
+    transition: all 1s;
+}
+.animationSideBar{
+    width: 100px !important;
+    transition: all 1s;
+}
+.animationSideBar .sideheader .name h1{
+    font-size: 10px !important;
+    transition: all 1s;
+}
+.animationSideBar .sideheader .name p{
+    font-size: 8px !important;
+    transition: all 1s;
+}
+.animationSideBar .sideheader .hamburgerbar{
+    width: 12px !important;
+    transition: all 1s;
+}
+.animationSideBar .topbar{
+    transform:  rotate(35deg);
+    transition: all 1s;
+}
+.animationSideBar .middlebar{
+    display: none;
+    transition: all 1s;
+}
+.animationSideBar .bottombar{
+    transform: rotate(-35deg);
+    transition: all 1s;
+}
+.animationSideBar .sidebody .sidebodypart ul li a{
+    font-size: 10px;
+    transition: all 1s;
+}
